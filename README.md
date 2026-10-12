@@ -53,4 +53,21 @@ Each menu item stores:
    npm install
    npx expo install @react-native-picker/picker
 ## 📂 Project Structure
+BistroManager/
+├── src/
+│ ├── app/
+│ │ ├── _layout.tsx → Navigation setup + MenuProvider
+│ │ ├── index.tsx → Home Screen (view all items)
+│ │ └── add-item.tsx → Add Item Screen (form)
+│ ├── components/
+│ │ └── MenuItemCard.tsx → Reusable card for each menu item
+│ ├── constants/
+│ │ └── Colors.ts → App-wide color palette
+│ ├── context/
+│ │ └── MenuContext.tsx → Shared menu state
+│ └── types/
+│ └── MenuItem.ts → TypeScript interfaces
+├── app.json
+├── package.json
+└── tsconfig.json
 
